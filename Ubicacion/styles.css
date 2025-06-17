@@ -1,0 +1,210 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pinyon Script", cursive;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  transition: background-color 0.2s ease;
+}
+
+header {
+  background-color: #f6f6e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 5px 5px;
+  z-index: 1000;
+}
+
+header .logo {
+  position: relative;
+}
+
+header .logonam {
+  position: relative;
+  color: #54493e;
+  text-decoration: none;
+  transition: 0.7s;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+.logonam {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2em; 
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #54493e;
+  font-weight: 600;
+  transition: 0.7s;
+  font-family: Helvetica;
+}
+
+.ubicacion-titulo-contenedor {
+  background-color: #8b4513;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ubicacion-titulo-contenedor h1 {
+  font-family: "Times New Roman", serif;
+  color: #ffffff;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ubicacion-section {
+  background-color: #f5deb3;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.mapa-contenedor {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  border: 5px solid #8b4513;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mapa-contenedor iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .ubicacion-titulo-contenedor h1 {
+    font-size: 2.2em;
+  }
+
+  .mapa-contenedor {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .mapa-contenedor iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ubicacion-titulo-contenedor h1 {
+    font-size: 1.8em;
+  }
+
+  .mapa-contenedor {
+    width: 98%;
+    border-width: 3px;
+  }
+
+  .mapa-contenedor iframe {
+    height: 250px;
+  }
+}
+
+footer {
+  background-color: #e8eed9;
+  color: #54493e;
+  padding: 40px 20px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.footer-col h3 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #3d352e;
+}
+
+.footer-col p,
+.footer-col a {
+  font-size: 0.95em;
+  color: #54493e;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.2em;
+  color: #54493e;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #000;
+}

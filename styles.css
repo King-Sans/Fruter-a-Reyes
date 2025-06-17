@@ -1,0 +1,366 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* -----------------------------------
+   La tipografías principales del sitio
+----------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pinyon Script", cursive;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  transition: background-color 0.2s ease;
+}
+
+/* -------------------------------
+   El encabezado fijo y navegación
+------------------------------- */
+header {
+  background-color: #f6f6e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 5px 5px;
+  z-index: 2;
+}
+
+header .logo {
+  position: relative;
+}
+
+header .logonam {
+  position: relative;
+  color: #54493e;
+  text-decoration: none;
+  transition: 0.7s;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 2px;
+  font-family: "Pinyon Script", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #54493e;
+  font-weight: 600;
+  transition: 0.7s;
+  font-family: Helvetica;
+}
+
+/* -----------------------------
+   La sección principal de inicio
+----------------------------- */
+#inicio {
+  background-image: url("Img/imgfond.png");
+  background-size: 60%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-color: #59afa1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: relative;
+}
+
+.inicio-titulo {
+  position: absolute;
+  top: 150px;
+  right: 190px;
+  font-family: "Pinyon Script", cursive;
+  font-size: 4em;
+  color: #fdd73d;
+  text-shadow: 2px 2px 4px #3d352e;
+  z-index: 1;
+}
+
+.botones {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  display: flex;
+  gap: 30px;
+  color: #3d352e;
+  transition: 0.7s;
+}
+
+.btn {
+  text-decoration: none;
+  color: #463d34;
+  transition: text-decoration 0.3s ease;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.bordechido {
+  background-color: #54493e;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 100%;
+}
+
+/* -----------------------------
+   La Sección de Productos
+----------------------------- */
+.productos {
+  background-color: #f7b9a1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #f3ece6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto-categoria {
+  background-color: #f7fff7;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.producto-categoria h3,
+.producto-categoria h4 {
+  font-family: "Dancing Script", cursive;
+  color: #54493e;
+}
+
+.producto-categoria h3 {
+  font-size: 2em;
+}
+
+.producto-categoria h4 {
+  font-size: 1.5em;
+}
+
+.producto-categoria ul {
+  list-style: none;
+  padding: 0;
+}
+
+.producto-categoria ul li {
+  font-size: 1.1em;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* -----------------------------
+   La Sección de Frutas por Temporada
+----------------------------- */
+.fruta {
+  background-color: #a7ccb8;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.frutas-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #e6f3e6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.temporada {
+  background-color: #f7fff7;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.temporada h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #54493e;
+}
+
+.temporada-imagen {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* La Distribución personalizada por estación */
+.temporada.primavera {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.temporada.verano {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.temporada.todo-el-ano {
+  grid-column: 3 / 4;
+  grid-row: span 2;
+  padding-top: 100px;
+}
+
+.temporada.otono {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.temporada.invierno {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* -----------------------------
+   El Pie de Página 
+----------------------------- */
+footer {
+  background-color: #e8eed9;
+  color: #54493e;
+  padding: 40px 20px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.footer-col h3 {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #3d352e;
+}
+
+.footer-col p,
+.footer-col a {
+  font-size: 0.95em;
+  color: #54493e;
+  text-decoration: none;
+  margin: 5px 0;
+  display: block;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+  color: #54493e;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.2em;
+  color: #54493e;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #54493e;
+}
+
+/* -----------------------------
+  El Diseño Responsivo
+----------------------------- */
+@media (max-width: 768px) {
+  .productos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .frutas-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .temporada.otono,
+  .temporada.invierno {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .frutas-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .temporada {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    width: 100%;
+    margin-top: 0;
+  }
+}
